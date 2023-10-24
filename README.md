@@ -4,6 +4,6 @@ Homebrew formula for installing apps &amp; tools
 
 # How to use
 ```
-brew tap asukiasyan/netutil
+brew tap asukiasyan/tools
 brew install netutil
 ```

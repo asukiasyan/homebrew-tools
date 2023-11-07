@@ -5,11 +5,11 @@
 class Netutil < Formula
   desc ""
   homepage "https://github.com/asukiasyan/homebrew-tools"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
-    url "https://github.com/asukiasyan/netutil/releases/download/v1.0.0/netutil_1.0.0_darwin_all.tar.gz"
-    sha256 "2656d9d6dc81378f4bebed7675f1abe1885157862ceccac6a1f135de8f8e024e"
+    url "https://github.com/asukiasyan/netutil/releases/download/v1.1.0/netutil_1.1.0_darwin_all.tar.gz"
+    sha256 "827a5e51c5b851f9081dd44be48e737760cdc327f04945e1651bf9f09b50fb6c"
 
     def install
       bin.install "netutil"
@@ -18,16 +18,16 @@ class Netutil < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asukiasyan/netutil/releases/download/v1.0.0/netutil_1.0.0_linux_arm64.tar.gz"
-      sha256 "e44b48d90e69f3cc6f1022e232a619ec6ad90093f553644882e03535dde0fbc7"
+      url "https://github.com/asukiasyan/netutil/releases/download/v1.1.0/netutil_1.1.0_linux_arm64.tar.gz"
+      sha256 "6273ecd80cabc0a07b71ed043aecc731915ec68fc9f42e4c0c442a93ba7e63e9"
 
       def install
         bin.install "netutil"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/asukiasyan/netutil/releases/download/v1.0.0/netutil_1.0.0_linux_amd64.tar.gz"
-      sha256 "f7b5c5d4ab610a26b420b06219b888eb0e0447959009768baf19d1d48d3e0314"
+      url "https://github.com/asukiasyan/netutil/releases/download/v1.1.0/netutil_1.1.0_linux_amd64.tar.gz"
+      sha256 "b0e238e5e3825a243b8fb338f907d37fd12680a0b89328abfdb4d128e7b9cf43"
 
       def install
         bin.install "netutil"
